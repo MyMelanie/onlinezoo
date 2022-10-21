@@ -1,0 +1,40 @@
+.backstage {
+    padding: 140px 0 74px 0;
+    background: 100% 150% no-repeat url("../img/3-flower_aside-right.png");
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &-img {
+            width: 609px;
+            height: 403px;
+        }
+    }
+
+}
+.block{
+    &__info{
+        padding: 0 10px 0 87px;
+        &-title {
+            margin-bottom: 20px;
+            color: #333B41;
+            font-size: 48px;
+            line-height: 120%;
+        }
+        &-subtitle {
+            margin-bottom: 34px;
+            font-size: 24px;
+            line-height: 120%;
+            color: #333B41;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 130%;
+            color: #333B41;
+            &:not(:last-child){
+                margin-bottom: 54px;
+            }
+        }
+
+    }
+}

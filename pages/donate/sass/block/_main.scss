@@ -1,0 +1,175 @@
+.main {
+    max-height: 1482px;
+    padding: 40px 0 180px 0;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);;
+    &__title {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 33px;
+        line-height: 130%;
+    }
+    &__text {
+        align-items: start;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+        color: #FE9013;
+
+    }
+    &__block {
+        margin-top: 60px;
+        padding: 40px 92px 62px 92px;
+        max-height: 964px;
+        background: rgba(255, 255, 255, 0.52);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        &-title {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 120%;
+            text-align: center;
+            color: #FE9013;
+        }
+        &-text {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: #333B41;
+        }
+    }
+    &__subblock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-count {
+            margin-right: 11px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-number {
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 80%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        &-descr {
+            margin-top: 11px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #333B41;
+        }
+        &-operation {
+            margin-right: 64px;
+            text-align: center;
+        }
+    }
+    &__btn {
+        button {
+            @include orange_btn;
+            margin-bottom: 30px;
+        }
+    }
+    &__lasttext {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+    }
+}
+.amount {
+    &__block {
+        align-items: start;
+        &-title {
+            margin-top: 48px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+        }
+    }
+}
+.donate {
+    &__block {
+        margin-top: 50px;
+        &-box {
+            margin-bottom: 30px;
+        }
+        &-form {
+            background: transparent;
+            background-image: url('../img/donat-icon-dlr.svg');
+            background-position: center right 10px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            width: 259px;
+            height: 54px;
+            border: 1px solid #929699;
+            border-radius: 2px;
+            padding: 0px 0px 0px 9px;
+            outline: none;
+        }
+    }
+}
+.dllr {
+    font-family: "Roboto-Bold";
+    color: #929699;
+    font-size: 21px;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+}
+.fs-radio-box {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 20px 0px 0px;
+    border: none;
+}
+.fs-1 {
+    margin: 0px 50px 0px 0px;
+}
+.fs-radio {
+    appearance: none;
+    background-color: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fs-radio:checked {
+    width: 16px;
+    height: 16px;
+    place-content: center;
+    background: #393938;
+    border: 8px solid #fe9013;
+}
+.users-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}

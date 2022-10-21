@@ -1,0 +1,19 @@
+@import 'block/fonts';
+@import 'block/mixins';
+
+* {
+    box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+@import 'block/header';
+@import 'block/panda';
+@import 'block/main';
+@import 'block/slider';
+@import 'block/footer';

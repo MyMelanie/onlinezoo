@@ -1,0 +1,48 @@
+.slider {
+	&__wraper {
+	width: 976px;
+	height: 27px;
+	background: #404950;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+	&__line {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 915px;
+		height: 2px;
+		background: #72828E;
+	}
+	&__round {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 10px;
+		height: 10px;
+		background: #FFEE2E;
+		border: none;
+		border-radius: 100%;
+		position: relative;
+		&-active {
+			&:before{
+				content: "";
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				border-radius: 50%;
+				border: 2px solid #FE9013;
+			}
+			&:after {
+				content: "";
+				width: 23px;
+				height: 23px;
+				position: absolute;
+				border-radius: 50%;
+				border: 2px solid #FE9013;
+			}
+		}
+	}
+}
